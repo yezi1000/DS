@@ -10,7 +10,7 @@ struct list{
     int SZ;
     node* top;
 }Stack;
-void CreateList(){
+void Init(){
     Stack.top=NULL;
     Stack.SZ=0;
 }
@@ -38,7 +38,7 @@ int main(){
     while(1){
         int op,n;
         scanf("%d",&op);
-        if(op==1) CreateList();
+        if(op==1) Init();
         else if(op==2) Pop();
         else if(op==3){
             scanf("%d",&n);
